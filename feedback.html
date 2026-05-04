@@ -93,16 +93,12 @@
   <h1>Your Feedback</h1>
   <p>I’d love to know what you think about this.</p>
 
-  <!-- Notice the action and method attributes added here -->
   <form action="https://formsubmit.co/archanasoysa2007@gmail.com" method="POST">
     
-    <!-- Added name="name" -->
     <input type="text" name="name" placeholder="Your Name" required>
 
-    <!-- Added name="message" -->
     <textarea name="message" placeholder="Write your thoughts here..." required></textarea>
 
-    <!-- Added name="rating" -->
     <select name="rating" required>
       <option value="">Rate this</option>
       <option value="1 Star">⭐</option>
@@ -112,16 +108,16 @@
       <option value="5 Stars">⭐⭐⭐⭐⭐</option>
     </select>
 
-    <!-- Optional: Add a hidden input to redirect back to your memories page after submitting -->
-    <input type="hidden" name="_next" value="our memories.html">
+    <!-- FIXED: Changed to our-memories.html -->
+    <input type="hidden" name="_next" value="our-memories.html">
     
-    <!-- Optional: Disable Captcha if you want a smoother experience -->
     <input type="hidden" name="_captcha" value="false">
 
     <button type="submit">Send Feedback</button>
   </form>
 
-  <a href="our memories.html" class="back-link">← Back to Memories</a>
+  <!-- FIXED: Changed to our-memories.html -->
+  <a href="our-memories.html" class="back-link">← Back to Memories</a>
 </div>
 
 </body>
